@@ -1,0 +1,22 @@
+resources:
+- frontend/
+- backend/
+- database/
+- ingress/
+
+configMapGenerator:
+- literals:
+  - ASPNETCORE_ENVIRONMENT=Development
+  name: common-config
+
+images:
+- name: cteichroewcapstoneacr.azurecr.io/express
+  newTag: v4
+- name: cteichroewcapstoneacr.azurecr.io/flask
+  newTag: v4
+- name: cteichroewcapstoneacr.azurecr.io/sqlite-db
+  newTag: v4
+- name: cteichroewcapstoneacr.azurecr.io/angular
+  newTag: v4
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
