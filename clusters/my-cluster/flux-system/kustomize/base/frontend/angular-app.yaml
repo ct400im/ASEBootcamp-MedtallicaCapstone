@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: angular-app
-        image: cteichroewcapstoneacr.azurecr.io/angular:latest
+        image: cteichroewcapstoneacr.azurecr.io/angular:v1
         ports:
         - containerPort: 80
       restartPolicy: Always
