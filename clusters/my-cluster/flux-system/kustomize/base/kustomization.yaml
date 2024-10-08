@@ -13,12 +13,12 @@ configMapGenerator:
 
 images:
 - name: cteichroewcapstoneacr.azurecr.io/express
-  newTag: v4
+  newTag: latest
 - name: cteichroewcapstoneacr.azurecr.io/flask
-  newTag: v4
+  newTag: latest
 - name: cteichroewcapstoneacr.azurecr.io/sqlite-db
-  newTag: v4
+  newTag: latest
 - name: cteichroewcapstoneacr.azurecr.io/angular
-  newTag: v4
+  newTag: latest
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
